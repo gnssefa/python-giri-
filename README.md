@@ -1,0 +1,3 @@
+01.11.2025  19:30  Python Giriş Tarihi ...
+
+1 yıl sonra bugün açılacak !!!
