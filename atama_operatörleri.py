@@ -30,7 +30,7 @@ x /= y
 print(x)
 
 ### Yüzde ###
-x = 7
+x = 17
 y = 9
 
 x %= y

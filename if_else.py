@@ -1,3 +1,4 @@
+
 kabul_yaşı = int(input("Lütfen Yaşınızı Giriniz :"))
 
 age = 22

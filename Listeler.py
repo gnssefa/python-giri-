@@ -2,6 +2,13 @@ listeler = ["Sefa","Güneş","Yazılım",5500]
 
 listeler[0] = "Zafer"
 
-listeler[0:3] =[]
+
+demetler = ("galtasaray" , "fenerbahçe" ,"beşiktaş")
+
+demetler[0] = "dsadsa"
+
+
+
 
 print(listeler)
+print(demetler)
