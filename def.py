@@ -1,14 +1,14 @@
-def kareal(number):
+# def kareal(number):
  
-    return number*number
+#     return number*number
 
-number = int(input("Lütfen sayınızı giriniz :"))
+# number = int(input("Lütfen sayınızı giriniz :"))
 
-sonuc = kareal(number)
+# sonuc = kareal(number)
 
-print(sonuc)
+# print(sonuc)
 
-
+# print
 
 
 
