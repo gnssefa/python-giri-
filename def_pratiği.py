@@ -14,10 +14,11 @@ def su_hesapla(kilo):
           print("Lütfen cinsiyetinizi belirtiniz !!")  
 
      elif cinsiyet == "kadın" :
-          print("-"*30)
+          print("*"*30)
+
           print("Cinsiyetiniz :",cinsiyet)
           print(k_hesapla,"Litre su içmelisiniz")
-          print("-"*30) 
+          print("*"*30) 
 
 
 kilo_al = int(input("Lütfen kilonuzu giriniz :"))
