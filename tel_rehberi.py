@@ -1,23 +1,129 @@
-tel_rehberi = dict()
-while True:
-    def add_number(x):
-        print("*Rehber Düzenleme Ekranına Hoşgeldiniz")
-        take_name = input("Lütfen Kaydedilecek Kişinin İsmini Giriniz :")
-        take_num = input("Lütfen Kişinin Numarasını Giriniz :")
+# tel_rehberi = dict()
+# while True:
+#     def add_number(x):
+#         print("* Rehber Düzenleme Ekranına Hoşgeldiniz *")
+#         take_name = input("Lütfen Kaydedilecek Kişinin İsmini Giriniz :")
+#         take_num = input("Lütfen Kişinin Numarasını Giriniz :")
 
-        # if take_num.isdigit():
-        #     if len(take_num)==11:
-        #      pass
-        #     else :
-        #      print("Lütfen 11 Haneli numara girdiğinizden emin olunuz !!!")
-        # else:
-        #      print("Lütfen sadece rakam giriniz")
-        #      break        
+#         if take_num.isdigit():
+#             if len(take_num)==11:
+#              pass
+#             else :
+#              print("Lütfen 11 Haneli numara girdiğinizden emin olunuz !!!")
+#         else:
+#              print("Lütfen sadece rakam giriniz")
+#              break        
 
-        x = tel_rehberi.setdefault(take_name,take_num)
-        print(f"{take_name} adlı kişi telefon rehberine eklendi")
-
-
-    add_number(tel_rehberi)
+#         x = tel_rehberi.setdefault(take_name,take_num)
+#         print(f"{take_name} adlı kişi telefon rehberine eklendi")
 
 
+#     add_number(tel_rehberi)
+
+
+# tel_rehberi = dict()
+
+# def add_number():
+#     print("* Rehber Düzenleme Ekranına Hoşgeldiniz *")
+#     take_name = input("Lütfen kaydedilecek kişinin ismini giriniz: ")
+#     take_num = input("Lütfen kişinin numarasını giriniz: ")
+
+#     # Rakam kontrolü
+#     if not take_num.isdigit():
+#         print(" Lütfen sadece rakam giriniz!")
+#         return  # fonksiyondan çık
+
+#     # Uzunluk kontrolü
+#     if len(take_num) != 11:
+#         print(" Lütfen 11 haneli numara girdiğinizden emin olunuz!")
+#         return
+
+#     # Kaydetme işlemi
+#     tel_rehberi[take_name] = take_num
+#     take_name= take_name.capitalize()
+#     print(f" {take_name} adlı kişi telefon rehberine eklendi.")
+
+# # Ana döngü
+# while True:
+#     add_number()
+#     devam = input("Başka kişi eklemek ister misiniz? (E/H): ").strip().lower()
+#     if devam != 'e':
+#         break
+
+# print("\n--- Rehber ---")
+# for isim, numara in tel_rehberi.items():
+#     print(f"{isim}: {numara}")
+#-------------------------------------------
+phone_directory = dict()
+
+
+#İşlevsel Fonksiyonlar Başlangıç
+#Numara ekleme 
+def directory_add():
+    take_name = input("Lütfen isim yazınız :")
+    take_num = input("Lütfen numara yazınız :")
+
+    phone_directory.setdefault(take_name,take_num).upper
+    print(f"{take_name} adlı kişi rehbere eklendi ! ")
+ 
+ # Numaraları Listeleme
+def directory_printer():
+    print("--- GÜNCEL REHBER ---")
+
+    for i,j in phone_directory.items():
+        print(i,":",j)
+
+# Numara silme
+def rmv_numbers(): 
+        
+        remove_people = input("Lütfen silmek istediğiniz kişiyi belirtiniz :")
+        
+        if remove_people not in phone_directory :
+            print("\nRehberinizde bu kişi bulunmamaktadır !!\n","*"*30)
+            
+        else :
+            trust = input("Silme işlemini oyalıyormusun ?"f"Silinecek olan kişi :{remove_people}  :  E/H ? :").upper()
+            if trust == "E":
+                phone_directory.pop(remove_people) 
+                print("Silme işlemi başarılı oldu !")
+                
+            else :
+                print("Silme işleminden vazgeçildi !")
+                
+        
+             
+           
+#İşlevsel fonskiyonlar bitişi
+
+
+while True :
+    print("*"*30)
+    y = input("Numara eklemek istiyorsanız : 1'i tuşlayın\n Numara Silmek istiyorsan 2'yi tuşla\n Rehberi görmek isterseniz 3'ü tuşlayın\nİşlem yapmak istemiyorsanız 4'ü tuşlayınız\n --Ne yapmak istersiniz(1,2,3,4): ")
+    if y == "1":
+        print("Ekleme işlemine yönlendirildiniz")
+        directory_add()
+        directory_printer()
+    elif y=="2":
+        rmv_numbers()
+    elif y == "3":
+        directory_printer()
+    elif y == "4":
+        print("İşlem sonlandırıldı !")
+        break
+    else:
+        print("*"*30,"\nYanlış karakter girdiniz ! ")
+    
+        
+
+                  
+           
+           
+                     
+
+    
+
+
+
+
+    
+    
