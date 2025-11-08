@@ -19,8 +19,9 @@ def see_users(x):
     for i in x:
         print(str(say)+"-Kullanıcı adı :",i)
         say+=1
+        input("Devam Etmek İçin Enter'e Basınız ...")
     print("-"*30)
-    input("Devam Etmek İçin Enter'e Basınız ...")
+    
 
 def ch0ise(x):
     print("-"*30)
@@ -60,5 +61,7 @@ while True:
     elif options ==4:
         ch0ise(users)
     else :
+        print("-"*30)
         print("! Lütfen Uygun Bir Tercih Yapınız !")
+        print("-"*30)
         
